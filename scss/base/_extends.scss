@@ -1,0 +1,29 @@
+%botones {
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+
+.error {
+    background-color: red;
+    @extend %botones;
+    @extend %flexbox
+}
+
+.accept {
+    background-color: green;
+    @extend %botones;
+    @extend %flexbox
+}
+
+.disabled {
+    background-color: gray;
+    @extend %botones;
+    @extend %flexbox
+}
+
+%flexbox {
+    display: flex;
+    justify-content: center;
+}

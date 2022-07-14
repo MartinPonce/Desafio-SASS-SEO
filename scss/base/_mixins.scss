@@ -1,0 +1,18 @@
+@mixin prefijos($propiedad) {
+    -webkit-transform: $propiedad;
+    -o-transform: $propiedad;
+    -moz-transform: $propiedad;
+    transform: $propiedad;
+}
+
+.transform-one {
+    @include prefijos(translate(50%))
+}
+
+.transform-two {
+    @include prefijos(scale(4))
+}
+
+.transform-three {
+    @include prefijos(rotate(90deg))
+}

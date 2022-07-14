@@ -1,0 +1,15 @@
+$standar: (
+    color-standar: #ccc,
+    bg-standar: #b2d6f9,
+    mx-auto: 0 auto,
+    flexbox-standar: flex
+);
+$premium: (
+    color-standar: black,
+    bg-standar: blue,
+    mx-auto: 0 auto,
+    flexbox-standar: grid
+);
+.standar {
+    background-color: map-get($standar, bg-standar);
+}
